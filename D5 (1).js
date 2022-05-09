@@ -51,10 +51,14 @@ delete me.age
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
+console.log("\n-------------<Exercise F>---------------")
+me.skills = ["JavaScript" , "Python", "Java"]
 
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
+console.log("\n------------<Exercise G>--------------")
+me.skills.pop() 
 
 // JS Functions
 /* Ex.1
