@@ -139,6 +139,19 @@ console.log(noNumbers)
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
+console.log("\n--------------<Exercise 6>---------------")
+
+function isThisAnEmail(email) {
+  return (email.indexOf("@") > 0 && email.indexOf(".") > 0)
+} 
+   
+   console.log("\n--------------<Test>---------------")
+   
+   let isThisEmail = isThisAnEmail("okay@yahoo.com")
+   console.log(isThisEmail)
+
+   let isThisEmail2 = isThisAnEmail("come@ com")
+   console.log(isThisEmail2) 
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
