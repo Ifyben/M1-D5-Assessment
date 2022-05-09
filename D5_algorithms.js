@@ -64,6 +64,10 @@ me.skills.pop()
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
+console.log("\n--------------<Exercise 1>---------------")
+const dice = function(number) {
+  return ((Math.random * 6) + 1)
+}
 
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
