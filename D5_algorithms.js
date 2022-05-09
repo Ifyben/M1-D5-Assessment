@@ -30,8 +30,6 @@ let sum = 10 + 20
 console.log("\n--------------<Exercise C>--------------")
 let random = Math.random * 20
 
-console.log("Pick a random number", random) 
-
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
@@ -65,13 +63,28 @@ me.skills.pop()
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
 console.log("\n--------------<Exercise 1>---------------")
-const dice = function(number) {
-  return ((Math.random * 6) + 1)
+const dice = function() {
+  return Math.floor(Math.random() * 6) + 1
 }
 
+let value1 = dice(1 , 6);   
+console.log("pick a number", value1)  
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
+console.log("\n-----------<Exercise 2>----------------")
+/*const whoIsBigger = function(firstNumber,secondNumber) {
+  return firstNumber > secondNumber? firstNumber:secondNumber 
+}  */
+// or
+const whoIsBigger = function(firstNumber,secondNumber) {
+  if(firstNumber > secondNumber)
+    return firstNumber
+  else 
+    return secondNumber
+}
+let whoIsBigger2 = whoIsBigger(5 , 7)
+console.log(whoIsBigger2)
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
