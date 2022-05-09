@@ -105,6 +105,21 @@ console.log(text)
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+console.log("\n--------------<Exercise 4>---------------")
+
+function deleteOne(str , boolean) { 
+   if (boolean === true)
+      return str.substring(1) 
+   else 
+      return str.slice(0, -1) 
+}
+
+console.log("\n------------<Test>-------------")
+let remove = deleteOne("Hey" , true)
+console.log(remove)  
+
+let remove2 = deleteOne("Hey" , false)
+console.log(remove2)  
 
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
