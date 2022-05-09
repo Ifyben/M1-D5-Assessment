@@ -196,6 +196,17 @@ console.log(howManyDays(new Date(2022, 5, 9)));
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+console.log("\n--------------<Exercise 10>---------------")
+
+function isTodayMyBirthday() {
+ let today = new Date() 
+ let birthday = (1997, 6, 25)
+ return (today.getDay() === birthday.getDay && today.getMonth() === birthday.getMonth())
+}
+
+console.log("\n--------------<Test>---------------")
+let heute = isTodayMyBirthday() 
+console.log(heute)
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
