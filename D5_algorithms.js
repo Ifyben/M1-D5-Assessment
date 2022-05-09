@@ -273,6 +273,20 @@ console.log("\n--------------<Test>---------------")
   **
   ***
 */
+console.log("\n--------------<Exercise 21>---------------")
+
+function halfTree(height) {
+  for(let i = 0; i < height; i++) {
+    let dividedTree = ""
+    for(let j = 0; j < i + 1; j++)
+        dividedTree = dividedTree + "*" 
+    console.log(dividedTree) 
+  }
+}
+
+console.log("\n--------------<Test>---------------")
+
+console.log("What a half tree!", halfTree(3))
 
 /* Ex.22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
