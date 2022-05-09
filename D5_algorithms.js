@@ -67,6 +67,7 @@ const dice = function() {
   return Math.floor(Math.random() * 6) + 1
 }
 
+console.log("\n--------------<Test>-------------")
 let value1 = dice(1 , 6);   
 console.log("pick a number", value1)  
 /* Ex.2 
@@ -83,6 +84,8 @@ const whoIsBigger = function(firstNumber,secondNumber) {
   else 
     return secondNumber
 }
+
+console.log("\n--------------<Test>-------------")
 let whoIsBigger2 = whoIsBigger(5 , 7)
 console.log(whoIsBigger2)
 
@@ -90,6 +93,14 @@ console.log(whoIsBigger2)
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
+console.log("\n-------------<Exercise 3>--------------")
+function splitMe(string) {
+  return string.split(" ") 
+}
+
+console.log("\n--------------<Test>-------------")
+let text = splitMe("How are you doing today?")
+console.log(text)
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
