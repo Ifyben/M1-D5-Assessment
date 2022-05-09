@@ -31,9 +31,16 @@ console.log("\n--------------<Exercise C>--------------")
 let random = Math.random * 20
 
 console.log("Pick a random number", random) 
+
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
+console.log("\n----------<Exercise D>------------")
+let me = {
+  name: "Ifechukwu Beauty",
+  surname: "Azubuike",
+  age: 24
+}
 
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
