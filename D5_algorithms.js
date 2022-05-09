@@ -181,6 +181,17 @@ console.log(today)
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
+console.log("\n--------------<Exercise 9>---------------")
+
+function howManyDays(selectedDate) {
+  let current = new Date()
+    let difference = current - selectedDate
+    return difference / (86400000)
+}
+
+//Test isn't working yet
+console.log("\n--------------<Test>---------------")
+console.log(howManyDays(new Date(2022, 5, 9)));  
 
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
