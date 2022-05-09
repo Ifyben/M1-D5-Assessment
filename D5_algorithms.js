@@ -282,6 +282,20 @@ console.log("\n--------------<Test>---------------")
    *** 
   *****
 */
+console.log("\n--------------<Exercise 22>---------------")
+
+function tree(height) {
+  for(let i = 0; i < height; i++) {
+    let asterics = "*".repeat(2 * i + 1)
+    let giveSpaceBefore = " ".repeat(height - i - 1)
+    console.log(giveSpaceBefore + asterics)
+  }
+
+}
+
+console.log("\n--------------<Test>---------------")
+
+console.log("A beatiful tree", tree(20))
 
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
