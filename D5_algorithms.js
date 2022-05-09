@@ -146,7 +146,7 @@ function isThisAnEmail(email) {
 } 
    
    console.log("\n--------------<Test>---------------")
-   
+
    let isThisEmail = isThisAnEmail("okay@yahoo.com")
    console.log(isThisEmail)
 
@@ -156,6 +156,16 @@ function isThisAnEmail(email) {
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+console.log("\n--------------<Exercise 7>---------------")
+
+function whatDayIsIt() {
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",]
+  return days[(new Date().getDay())]  
+}
+
+console.log("\n--------------<Test>---------------")
+let today = whatDayIsIt()
+console.log(today)  
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
