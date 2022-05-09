@@ -286,6 +286,18 @@ console.log("\n--------------<Test>---------------")
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
+console.log("\n--------------<Exercise 23>---------------")
+function isItPrime(number) {
+  for(i = 2; i < number; i++)
+    if(number % i === 0) return false;
+  return number > 1;
+}
+
+console.log("\n--------------<Test>---------------")
+
+let prime = isItPrime(3)
+console.log("Is the selected number a prime number?", prime) 
+
 
 /* This movies array is used throughout the exercises. Please don't change it :)  */
 const movies = [
