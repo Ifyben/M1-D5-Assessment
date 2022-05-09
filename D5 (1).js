@@ -45,6 +45,8 @@ let me = {
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
+console.log("\n------------<Exercise E>---------------")
+delete me.age 
 
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
